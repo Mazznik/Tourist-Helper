@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backgroundLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_image"
+            android:alpha="0.2"
+            />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="390dp"
+            android:alpha="0.8" />
+
+
+        <TextView
+            android:id="@+id/naslovLog"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:text="@string/login"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:fontFamily="serif"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editUser"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="470dp"
+            android:hint="Username"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/editPass"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="540dp"
+            android:hint="Password"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/logButton"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="620dp"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:backgroundTint="@color/white"
+            android:alpha="0.8"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textNotHaveAccount"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="780dp"
+            android:text="Don't have account?"/>
+
+        <TextView
+            android:id="@+id/textRegistration"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="780dp"
+            android:text="Register"
+            android:textColor="@color/linkColor"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="750dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
